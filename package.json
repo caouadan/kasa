@@ -1,9 +1,12 @@
 {
   "name": "kasa",
   "private": true,
+  "homepage": "https://caouadan.github.io/kasa",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "redeploy": "npm run build",
+	  "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
