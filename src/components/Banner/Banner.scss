@@ -1,0 +1,53 @@
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  height: 223px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  h1 {
+    position: relative;
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+// Mobile 768px
+@media (max-width: 768px) {
+  .banner {
+    height: 111px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    h1 {
+      font-size: 24px;
+      padding: 0 16px;
+      text-align: left;
+      width: auto;
+
+      .break-mobile {
+        display: block;
+      }
+    }
+  }
+}

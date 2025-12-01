@@ -1,0 +1,41 @@
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 209px;
+  background-color: #000000;
+  text-align: center;
+  gap: 28px;
+  width: 100%;
+
+  img {
+    width: 122px;
+    margin-top: 66px;
+  }
+
+  p {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin: 0;
+    font-weight: 500;
+  }
+}
+
+// Mobile 768px
+@media (max-width: 768px) {
+  footer {
+    gap: 20px;
+
+    img {
+      width: 100px;
+      margin-top: 50px;
+    }
+
+    p {
+      font-size: 12px;
+      width: 133px;
+      line-height: 1.4;
+    }
+  }
+}

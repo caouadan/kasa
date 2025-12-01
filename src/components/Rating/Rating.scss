@@ -1,0 +1,15 @@
+.rating {
+    display: flex;
+    gap: 4px;
+}
+
+// Mobile 768px
+@media (max-width: 768px) {
+  .rating {
+    gap: 2px;
+
+img.star-icon {
+    width: 18px;
+}
+  }
+}

@@ -1,0 +1,33 @@
+.tags-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 24px 0;
+    flex-wrap: wrap;
+
+    .tag-item {
+    height: 25px;
+    min-width: 115px;
+    background-color: #FF6060;
+    border-radius: 10px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0 10px;
+    }
+}
+
+// Mobile 768px
+@media (max-width: 768px) {
+  .tags-container {
+    gap: 10px;
+    margin: 10px 0 16px 0;
+
+    .tag-item {
+      min-width: auto;
+      font-size: 10px;
+    }
+  }
+}

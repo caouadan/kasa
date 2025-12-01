@@ -1,0 +1,136 @@
+.logement-page {
+  margin: auto;
+  width: 100%;
+  max-width: 1240px;
+
+  .logement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+
+  .logement-main-info {
+    max-width: 100%;
+  }
+
+  .logement-title {
+    font-size: 36px;
+    font-weight: 500;
+    color: #ff6060;
+    margin-bottom: 10px;
+    white-space: wrap;
+    margin: 0;
+  }
+
+  .logement-location {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .logement-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 21px;
+  }
+
+  .logement-host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: right;
+  }
+
+  .logement-host-name {
+    font-weight: 500;
+    font-size: 18px;
+    color: #ff6060;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logement-host-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+    .logement-rating {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .logement-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+    margin-bottom: 50px;
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+// Mobile 768px
+@media (max-width: 768px) {
+  .logement-page {
+    .logement-header {
+      flex-direction: column;
+      margin-top: 15px;
+    }
+
+    .logement-main-info {
+      max-width: 100%;
+    }
+
+    .logement-title {
+      font-size: 18px;
+    }
+
+    .logement-location {
+      font-size: 14px;
+      margin: 5px 0 10px 0;
+    }
+
+    .logement-side {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      width: 100%;
+      margin-bottom: 13px;
+    }
+
+    .logement-host {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logement-host-name {
+      font-size: 12px;
+      text-align: right;
+    }
+
+    .logement-host-picture {
+      width: 32px;
+      height: 32px;
+    }
+
+    .logement-rating {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .logement-info {
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+  }
+}

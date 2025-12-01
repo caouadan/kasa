@@ -1,0 +1,23 @@
+html, body, #root {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+}
+
+.app-container {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.page-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  flex: 1;
+}
