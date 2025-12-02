@@ -50,7 +50,7 @@ npm run deploy
 ```
 
 After deployment, your site will be available at:
-https://<yourusername>.github.io/kasa/
+https://YOURUSERNAME.github.io/kasa/
 
 Tech stack:
 React
