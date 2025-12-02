@@ -7,19 +7,19 @@ function Collapse({ children, title }) {
 
     return (
         <div className="collapse">
-            <div className="collapse-header">
+            <div className="collapse-header"
+                onClick={() => setVisible(!isVisible)}
+            >
                 <h2>{title}</h2>
                 <img
                     src={arrowCollapse}
                     className={`collapse-icon ${isVisible ? 'open' : ''}`}
                     alt="collapse arrow"
-                    onClick={() => setVisible(!isVisible)}
                 />
             </div>
-
-                <div className={`collapse-content ${isVisible ? 'open' : ''}`}>
-                    {children}
-                </div>
+            <div className={`collapse-content ${isVisible ? 'open' : ''}`}>
+                {children}
+            </div>
         </div>
     );
 }
